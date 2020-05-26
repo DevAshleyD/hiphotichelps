@@ -1,0 +1,65 @@
+<script type="module" src="pages/home/components/profileWidget.js"></script>
+<script type="module" src="pages/home/components/displayPosts.js"></script>
+
+
+<div class="grid-home-page">
+    <div id="tabs">
+        <input id="tab1" type="radio" name="tabs" checked>
+
+        <label for="tab1"><i class="fa fa-pencil"></i><span>Manifesto</span></label>
+
+        <input id="tab2" type="radio" name="tabs">
+        <label for="tab2"><i class="fa fa-camera"></i><span>Videos</span></label>
+
+        <input id="tab3" type="radio" name="tabs">
+        <label for="tab3"><i class="fa fa-camera"></i><span>Reviews</span></label>
+
+        <input id="tab4" type="radio" name="tabs">
+        <label for="tab4"><i class="fa fa-comment"></i><span>Employees</span></label>
+
+
+        <section id="content1">
+            <h4>Manifesto</h4>
+            <p><b>Monthly Target:</b> 3500 IDX</p>
+            <p>Bacon ipsum dolor sit amet landjaeger sausage brisket, jerky drumstick fatback boudin ball tip turducken. Pork belly meatball t-bone bresaola tail filet mignon kevin turkey ribeye shank flank doner cow kielbasa shankle. Pig swine chicken hamburger, tenderloin turkey rump ball tip.</p>
+        </section>
+
+        <section id="content2">
+            <img src="img/youtube.jpg" style="width:100%;" />
+        </section>
+
+        <section id="content3">
+            <h3>Submit A Review</h3>
+            <div class="form-group">
+                <x-star-rating value="3" number="5"></x-star-rating>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="e.g. I've known this guy for about 10 years. I think we should elect him because..." />
+            </div>
+            <div class="form-group">
+                <textarea rows="3" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-blue">SUBMIT</button>
+            </div>
+            <display-posts></display-posts>
+        </section>
+        <section id="content4">
+            <h3>Submit A Review</h3>
+            <div class="form-group">
+                <x-star-rating value="3" number="5"></x-star-rating>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="e.g. Working for Bob has been an interesting experience. I have learned a lot about..." />
+            </div>
+            <div class="form-group">
+                <textarea rows="3" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-blue">SUBMIT</button>
+            </div>
+            <display-posts></display-posts>
+        </section>
+    </div>
+    <profile-widget></profile-widget>
+</div>
