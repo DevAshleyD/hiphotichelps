@@ -1,0 +1,34 @@
+<script type="module" src="pages/home/components/displayPosts.js"></script>
+<div id="tabs">
+    <input id="tab1" type="radio" name="tabs" checked>
+    <label for="tab1">Overview</label>
+    <input id="tab2" type="radio" name="tabs">
+    <label for="tab2">Reviews</label>
+
+    <section id="content1">
+        <h3>Website Development</h3>
+        <p>This course provides an introduction to website development using HTML, CSS and Javascript.</p>
+        <h3>Course Syllabus</h3>
+        <p><b>Section 1:</b> HTML Basics</p>
+        <div class="form-group">
+            <a href="#/education/courseexample" class="btn btn-blue">START COURSE</a>
+        </div>
+    </section>
+    <section id="content2">
+        <h3>Submit A Review</h3>
+        <div class="form-group">
+            <x-star-rating value="3" number="5"></x-star-rating>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="e.g. This was a good course but..." />
+        </div>
+        <div class="form-group">
+            <textarea rows="3" class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-blue">SUBMIT</button>
+        </div>
+        <x-star-rating value="3" number="5"></x-star-rating> (need to add this inside components)
+        <display-posts></display-posts>
+    </section>
+</div>
