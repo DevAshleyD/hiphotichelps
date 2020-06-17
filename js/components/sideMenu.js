@@ -146,11 +146,11 @@ ul.treeview-menu {
                         </span>
                         </a>
                         <ul class="treeview-menu" style="display: none;">
-                            <li>
-                                <a href="#/casino/index">
-                                    <span>Casino</span>
-                                </a>
-                            </li>
+                            // <li>
+                            //     <a href="#/casino/index">
+                            //         <span>Casino</span>
+                            //     </a>
+                            // </li>
                             <li>
                                 <a href="#/news">
                                     <span>News</span>
